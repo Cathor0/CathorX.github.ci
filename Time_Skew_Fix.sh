@@ -15,26 +15,19 @@ fi
 
 DC_IP="$1"
 
-echo "[*] Installing required packages..."
-apt update -y
-apt install -y systemd-timesyncd ntpdate util-linux
+echo "[*] Configuring time sync with domain controller at $DC_IP..."
 
-echo "[*] Enabling systemd-timesyncd..."
 systemctl enable systemd-timesyncd
 systemctl restart systemd-timesyncd
 
-echo "[*] Configuring /etc/systemd/timesyncd.conf with DC IP $DC_IP..."
 sed -i '/^NTP=/d' /etc/systemd/timesyncd.conf
 echo "NTP=$DC_IP" >> /etc/systemd/timesyncd.conf
 
-echo "[*] Restarting systemd-timesyncd with new config..."
 systemctl restart systemd-timesyncd
 timedatectl set-ntp true
 
-echo "[*] Forcing manual sync with ntpdate..."
 ntpdate -b "$DC_IP"
 
 echo "[*] Done. Final status:"
 timedatectl status
 timedatectl timesync-status
-
