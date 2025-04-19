@@ -8,7 +8,7 @@ This is the standard place for custom system-wide scripts.
 
 ```bash
 
-sudo nano /usr/local/bin/fix-time-skew
+sudo nano /usr/local/bin/Time_Skew_Fix
 
 ```
 
@@ -16,14 +16,14 @@ sudo nano /usr/local/bin/fix-time-skew
 
 ````bash
 
-sudo cp /usr/local/bin/Fix-Time-Skew.sh
+sudo cp /usr/local/bin/Time_Skew_Fix.sh
 
 ````
 ### 3. ✅ Make it executable
 
 ```bash
 
-sudo chmod +x /usr/local/bin/fix-time-skew
+sudo chmod +x /usr/local/bin/Time_Skew_Fix
 
 ```
 
@@ -33,7 +33,7 @@ sudo chmod +x /usr/local/bin/fix-time-skew
 
 ```bash
 
-sudo fix-time-skew 10.129.XX.XX
+sudo Time_Skew_Fix 10.129.XX.XX
 
 ```
 
