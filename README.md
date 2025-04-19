@@ -12,7 +12,7 @@ sudo nano /usr/local/bin/fix-time-skew
 
 ```
 
-### 2. 📁 Move it to "bin" file
+### 2. 📁 Move it to 'bin' file
 
 ````bash
 
