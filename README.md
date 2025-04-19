@@ -47,9 +47,6 @@ timedatectl set-ntp true
 
 echo "[*] Forcing manual sync with ntpdate..."
 ntpdate -b "$DC_IP"
-#Try to install it (optional) 
-#echo "[*] Syncing hardware clock to system time..."
-#hwclock --systohc
 
 echo "[*] Done. Final status:"
 timedatectl status
