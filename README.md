@@ -8,7 +8,7 @@ This is the standard place for custom system-wide scripts.
 
 ```bash
 
-sudo nano /usr/local/bin/Time_Skew_Fix.sh
+sudo cp Time_Skew_Fix.sh /usr/local/bin/Time_Skew_Fix.sh
 
 ```
 
