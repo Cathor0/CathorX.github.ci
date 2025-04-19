@@ -1,4 +1,7 @@
 # Time_Skew_Fix
+### Description
+Fix time skew issues in Kerberos environments by syncing system time with a domain controller using systemd-timesyncd and ntpdate.
+
 ### 1. 📝 Save the script to `/usr/local/bin`
 
 This is the standard place for custom system-wide scripts.
