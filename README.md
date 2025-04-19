@@ -9,11 +9,14 @@ sudo nano /usr/local/bin/fix-time-skew
 
 ```
 
-### Paste this code
+### 2. 📁 Move it to "bin" file
+
+````bash
+
+sudo cp /usr/local/bin/Fix-Time-Skew.sh
+
 ````
-Paste Time_Skew_Fix
-````
-### 2. ✅ Make it executable
+### 3. ✅ Make it executable
 
 ```bash
 
@@ -23,7 +26,7 @@ sudo chmod +x /usr/local/bin/fix-time-skew
 
 ---
 
-### 3. 🚀 Use it like a command
+### 4. 🚀 Use it like a command
 
 ```bash
 
