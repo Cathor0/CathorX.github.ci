@@ -1,4 +1,4 @@
-# CathorX.github.ci
+# Time_Skew_Fix
 ### 1. 📝 Save the script to `/usr/local/bin`
 
 This is the standard place for custom system-wide scripts.
