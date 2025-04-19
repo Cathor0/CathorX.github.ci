@@ -66,13 +66,6 @@ sudo ./requirements.sh
 
 ---
 
-## 🧪 Tested On
-
-- ✅ Kali Linux
-- ✅ Debian-based distros
-
----
-
 ## 📜 License
 
 MIT – use freely, modify openly, share proudly.
