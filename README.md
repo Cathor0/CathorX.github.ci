@@ -2,7 +2,7 @@
 
 Fix time skew issues in Kerberos environments by syncing your system time with a Domain Controller using `systemd-timesyncd` and `ntpdate`.
 
-This script is especially useful in penetration testing labs or Active Directory environments where Kerberos authentication fails due to clock drift.
+This script is especially useful in penetration testing labs or Active Directory environments where Kerberos authentication fails due to clock drift (krb_ap_err_skew(clock skew too great)).
 
 ---
 
